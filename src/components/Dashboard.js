@@ -29,7 +29,9 @@ export const Dashboard = () => {
             console.log(decoded.userId)
             setExpired(decoded.exp)
         } catch (error) {
-
+            if (error.response) {
+                history.push("/");
+            }
         }
     }
 
