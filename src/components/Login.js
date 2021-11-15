@@ -42,8 +42,10 @@ const Login = () => {
                                     <div className="controls">
                                         <input type="password" className="input" placeholder="******"
                                             value={password} onChange={(e) => setPassword(e.target.value)} />
+
                                     </div>
                                 </div>
+                                <div class="content is-small">Not Have Account ? <a href="http://localhost:3000/register">Register Here</a></div>
                                 <div className="field mt-5">
                                     <button className="button is-success is-fullwidth">Login</button>
                                 </div>
